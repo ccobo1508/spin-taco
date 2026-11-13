@@ -1,32 +1,36 @@
-# React + TypeScript + Vite
+# Spin Taco
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Selector aleatorio de personas con tarjetas, avatares locales y persistencia en `localStorage`.
 
-Currently, two official plugins are available:
+## Uso
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. `npm install`
+2. `npm run dev`
+3. Agrega nombres con el formulario del panel "Participantes" (máximo 40; se rechazan vacíos y duplicados sin distinguir mayúsculas).
+4. Presiona **Play**: las tarjetas se iluminan de a una, muy rápido al inicio y desacelerando hasta detenerse en la persona ganadora.
+5. Al terminar se abre un modal de felicitaciones. Al cerrarlo, la persona pasa al listado de seleccionados y su tarjeta sale del grid para no volver a ser elegida.
+6. **Reiniciar sorteo** devuelve a todas las personas al grid de tarjetas y vacía el listado de seleccionados.
 
-## React Compiler
+Cada persona recibe un avatar determinista del set local en `public/avatars/` (25 SVG), elegido por hash de su nombre: el mismo nombre conserva siempre el mismo avatar.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Persistencia
 
-## Expanding the Oxlint configuration
+El listado total y las marcas de selección se guardan en `localStorage` bajo la clave `spin-taco:roster:v1`. Al recargar la página se restaura el estado; si los datos están corruptos o ausentes se usa la lista inicial por defecto.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Scripts
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- `npm run dev` — servidor de desarrollo con HMR
+- `npm run build` — chequeo de tipos y build de producción
+- `npm run lint` — Oxlint
+- `npm run preview` — sirve el build de producción
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Estructura
+
+- `src/App.tsx` — composición de la pantalla
+- `src/components/` — grid, tarjeta, gestión de nombres, listados y modal
+- `src/hooks/` — estado del roster y motor de resaltado
+- `src/lib/` — persistencia, avatares y cálculo del sorteo
+
+## Stack
+
+React 19 + TypeScript + Vite, sin dependencias adicionales. La animación usa `requestAnimationFrame` y respeta `prefers-reduced-motion`.
