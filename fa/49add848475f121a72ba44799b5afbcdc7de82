@@ -1,0 +1,83 @@
+.gitignore
+  s_cfc48fe942c59b::t_ca41d6d5f7e02e 25-27
+openspec/changes/archive/2026-11-13-add-spin-wheel/.openspec.yaml
+  s_cfc48fe942c59b::t_e7a0a5b5e3e261 1-2
+openspec/changes/archive/2026-11-13-add-spin-wheel/tasks.md
+  s_cfc48fe942c59b::t_4ba4ee48597266 1-59
+openspec/config.yaml
+  s_496f5fbd154202::t_84004df2996317 1-32
+public/avatars/avatar-01.svg
+  s_cfc48fe942c59b::t_cdb9ef553647e7 1-12
+public/avatars/avatar-02.svg
+  s_cfc48fe942c59b::t_b142553722430b 1-12
+public/avatars/avatar-03.svg
+  s_cfc48fe942c59b::t_19f679e9e32f00 1-12
+public/avatars/avatar-04.svg
+  s_cfc48fe942c59b::t_953f75d051dfe9 1-12
+public/avatars/avatar-05.svg
+  s_cfc48fe942c59b::t_1448a8bf705010 1-12
+public/avatars/avatar-06.svg
+  s_cfc48fe942c59b::t_4c72b1e35a1c4f 1-12
+public/avatars/avatar-07.svg
+  s_cfc48fe942c59b::t_baad5c1af11760 1-12
+public/avatars/avatar-08.svg
+  s_cfc48fe942c59b::t_00c7dd82667618 1-12
+public/avatars/avatar-09.svg
+  s_cfc48fe942c59b::t_23c3572caccfef 1-12
+public/avatars/avatar-10.svg
+  s_cfc48fe942c59b::t_8f018683c69322 1-12
+public/avatars/avatar-11.svg
+  s_cfc48fe942c59b::t_f7cdb7ef91f0bc 1-12
+public/avatars/avatar-12.svg
+  s_cfc48fe942c59b::t_82d71a24384d7e 1-12
+public/avatars/avatar-13.svg
+  s_cfc48fe942c59b::t_383ac57160a184 1-12
+public/avatars/avatar-14.svg
+  s_cfc48fe942c59b::t_a4522d9383a188 1-12
+public/avatars/avatar-15.svg
+  s_cfc48fe942c59b::t_ae0ce1c419eb75 1-12
+public/avatars/avatar-16.svg
+  s_cfc48fe942c59b::t_38dea34b7e3fa7 1-12
+public/avatars/avatar-17.svg
+  s_cfc48fe942c59b::t_6ad7387129989b 1-12
+public/avatars/avatar-18.svg
+  s_cfc48fe942c59b::t_11176f72f56ca5 1-12
+public/avatars/avatar-19.svg
+  s_cfc48fe942c59b::t_1a4f1929e6dc48 1-12
+public/avatars/avatar-20.svg
+  s_cfc48fe942c59b::t_9f823e9293f2ef 1-12
+public/avatars/avatar-21.svg
+  s_cfc48fe942c59b::t_5cb34f22f52f1d 1-12
+public/avatars/avatar-22.svg
+  s_cfc48fe942c59b::t_02cad56a324367 1-12
+public/avatars/avatar-23.svg
+  s_cfc48fe942c59b::t_2d192f08fd38c6 1-12
+public/avatars/avatar-24.svg
+  s_cfc48fe942c59b::t_c6151fa1bfee19 1-12
+public/avatars/avatar-25.svg
+  s_cfc48fe942c59b::t_dcb23f7979f348 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "fa49add848475f121a72ba44799b5afbcdc7de82",
+  "prompts": {},
+  "sessions": {
+    "s_496f5fbd154202": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_e2b0a4063ffeMd3ZhDB2wVdrFZ",
+        "model": "inditex/KAIA/deepseek-v4.1-flash_high"
+      },
+      "human_author": "Carlos Cobo <carlosacs@ext.inditex.com>"
+    },
+    "s_cfc48fe942c59b": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_e2af55b4affeftk2d6RZlbNpWp",
+        "model": "inditex/KAIA/deepseek-v4.1-flash_high"
+      },
+      "human_author": "Carlos Cobo <carlosacs@ext.inditex.com>"
+    }
+  }
+}
