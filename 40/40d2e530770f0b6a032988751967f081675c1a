@@ -1,0 +1,48 @@
+.gitignore
+  h_bfb5469da8e0a1 1-24
+.oxlintrc.json
+  h_bfb5469da8e0a1 1-8
+README.md
+  h_bfb5469da8e0a1 1-32
+index.html
+  h_bfb5469da8e0a1 1-13
+package-lock.json
+  h_bfb5469da8e0a1 1-1656
+package.json
+  h_bfb5469da8e0a1 1-25
+public/favicon.svg
+  h_bfb5469da8e0a1 1
+public/icons.svg
+  h_bfb5469da8e0a1 1-24
+src/App.css
+  h_bfb5469da8e0a1 1-184
+src/App.tsx
+  h_bfb5469da8e0a1 1-122
+src/assets/react.svg
+  h_bfb5469da8e0a1 1
+src/assets/vite.svg
+  h_bfb5469da8e0a1 1
+src/index.css
+  h_bfb5469da8e0a1 1-111
+src/main.tsx
+  h_bfb5469da8e0a1 1-10
+tsconfig.app.json
+  h_bfb5469da8e0a1 1-26
+tsconfig.json
+  h_bfb5469da8e0a1 1-7
+tsconfig.node.json
+  h_bfb5469da8e0a1 1-23
+vite.config.ts
+  h_bfb5469da8e0a1 1-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "4040d2e530770f0b6a032988751967f081675c1a",
+  "prompts": {},
+  "humans": {
+    "h_bfb5469da8e0a1": {
+      "author": "Carlos Cobo <carlosacs@ext.inditex.com>"
+    }
+  }
+}
